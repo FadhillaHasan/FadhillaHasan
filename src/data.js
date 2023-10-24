@@ -6,6 +6,6 @@ export const workdata = [
       date: "2023",
       desc:
         "Translating special event information pamphlets from Japanese to English. Social media, Official Shop and Media translations. Proof-reading and editing existing materials for accuracy.",
-      img: "./assets/hanatrans2.png",
+      img: "./assets/hanalogo.svg",
     }
   ];
