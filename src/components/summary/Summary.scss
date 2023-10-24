@@ -1,0 +1,154 @@
+@import "../../global.scss";
+
+.summary{
+    background-color: white;
+    display: flex;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left{
+        flex: 0.5;
+        overflow: hidden;
+        .wrapper{
+            width: 95%;
+            height: 100%;
+            padding-left: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @include mobile{
+                padding-left: 0;
+                align-items: center;
+            }
+
+            h1{
+                font-size: 100px;
+                margin: 10px 0;
+                font-weight: 400;
+
+                @include mobile{
+                    font-size: 40px;
+                }
+            }
+            h2{
+                font-size: 50px;
+                font-weight: 300;
+                @include mobile{
+                    font-size: 40px;
+                }
+            }
+            h3{
+                font-size: 40px;
+                font-weight: 300;
+
+                @include mobile{
+                    font-size: 30px;
+                }
+
+                span{
+                    font-size: inherit;
+                    color: rgb(231, 125, 54)
+                }
+
+            }
+        }
+        a{
+            position: absolute;
+            bottom: 10px;
+            left:50%;
+
+            .arrow{
+                color: black;
+                animation: arrowBlink 2s infinite;
+            }
+
+            @keyframes arrowBlink{
+                100%{
+                    opacity: 0;
+                }
+                0%{
+                    opacity: 0.8;
+                }
+            }
+        }
+
+    }
+
+    .right{
+        flex: 0.5;
+        position: relative;
+
+        .wrapper{
+            list-style-type: decimal;
+            width: 95%;
+            height: 100%;
+            padding-left: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @include mobile{
+                padding-left: 0;
+                align-items: center;
+            }
+            ul {        
+                list-style-position: inside;
+               }
+               
+            h1{
+                font-size: 100px;
+                margin: 10px 0;
+                font-weight: 400;
+
+                @include mobile{
+                    font-size: 40px;
+                }
+            }
+            h2{
+                font-size: 50px;
+                font-weight: 300;
+                @include mobile{
+                    font-size: 40px;
+                }
+            }
+            h3{
+                font-size: 40px;
+                font-weight: 300;
+
+                @include mobile{
+                    font-size: 30px;
+                }
+
+                span{
+                    font-size: inherit;
+                    color: rgb(231, 125, 54)
+                }
+
+            }
+        }
+        a{
+            position: absolute;
+            bottom: 10px;
+            left:50%;
+
+            .arrow{
+                color: black;
+                animation: arrowBlink 2s infinite;
+            }
+
+            @keyframes arrowBlink{
+                100%{
+                    opacity: 0;
+                }
+                0%{
+                    opacity: 0.8;
+                }
+            }
+        }
+
+    }
+}
